@@ -1,0 +1,27 @@
+.container {
+    max-width: 90%;
+    padding: 0% 2%;
+    background-color:rgb(255,178,0);
+    text-align: center;
+}
+#footer i{
+    margin: 10px;
+}
+ul li
+{
+    list-style: none;
+    line-height: 35px;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+}
+p{
+    color: white;
+    font-size: 18px;
+}
+#trendy input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #222;
+    background: none;
+}

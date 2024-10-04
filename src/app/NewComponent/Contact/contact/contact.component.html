@@ -1,0 +1,76 @@
+<div class="container">
+    <div class=' h-100 bg-light  p-0 ' id="cont">
+        <div class='row col-sm-12 d-flex justify-content-between m-0 pr-0' id="first">
+            <div class='col-xl-6' id="info">
+                <p class='mt-3 mb-3'>Get in Touch</p>
+                <div class='row mb-4'>
+                    <span class='col-sm-6 mt-5'>
+                        <h6 class='font-weight-bold'>Our store</h6>
+                        <ul class='pl-1 text-secondary'>
+                            <li>500 Terry Francois Street</li>
+                            <li>San Francisco, CA 94158</li>
+                            <li>123-456-7890</li>
+                            <li>info@LULU&PEPE.com</li>
+                        </ul>
+                    </span>
+                    <span class='col-sm-6 mt-5'>
+                        <h6 class='font-weight-bold'>Opening Hours</h6>
+                        <ul class='pl-1 text-secondary'>
+                            <li>Mon - Fri: 10am - 8pm</li>
+                            <li>Sat: 10am - 4pm</li>
+                            <li>Sun: 10am - 6pm</li>
+                            </ul>
+                    </span>
+                </div>
+                
+                    <div class='row col-sm-12'>
+                        <form method="GET" class='col-sm-12 pl-0' action="https://regexr.com/3e48o" id="myFormId">
+                            <h6 class="font-weight-bold col-sm-12 pl-0">Lulu & Pepe are here to answer your questions</h6>    
+                            <div class='col-sm-12 pl-0  mt-1 mb-1 first_info'>
+                                <div class='col-sm-12 pl-0 pr-0'>
+                            
+                                        <input type='text' id='name' class='pt-2 pb-2' style="width:100%" [class.border-danger]="phone.invalid && phone.touched"  [(ngModel)]='cont.name' name="name" placeholder='Full Name' #fullname="ngModel" #test  pattern="^[a-zA-Z\s]+$"  (click)="boldBroder(test)" autocomplete="off" required>
+                                        <div *ngIf="fullname.errors && (fullname.invalid || fullname.touched)"> 
+                                            <small class="text-danger" *ngIf="fullname.errors.required && fullname.touched">Full Name is required</small>  
+                                            <small class="text-danger" *ngIf="fullname.errors.pattern">Name Must Be String</small>  
+                                        </div>
+                                    </div>
+                                <div class='col-sm-12 pl-0 pr-0'>
+                                    <input type='tel' id='phone' class='pt-2 pb-2' style="width:100%" placeholder="Phone" [class.border-danger]="phone.invalid && phone.touched" [(ngModel)]='cont.phone' name='phone' #phone='ngModel'   #test1 pattern="^[0-9]{11}|([\d]{3}-[\d]{3}-[\d]{3})$" (click)="boldBroder(test1)" autocomplete="off" required>
+                                    <div *ngIf="phone.errors && (phone.invalid || phone.touched)"> 
+                                        <small class="text-danger" *ngIf="phone.errors.required && phone.touched">Phone Number is required</small>  
+                                        <small class="text-danger" *ngIf="phone.errors.pattern">Phone Number must be 11 in EG or 9 in USA</small>  
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class='col-sm-12 pl-0'>
+                                <input type="email" placeholder="Email" [class.border-danger]="email.invalid && email.touched" [(ngModel)]='cont.email' name='email' #email='ngModel' style="width:100%" class='col-sm-12 mt-1 pt-2 pb-2' #test2 pattern="^[\w]+[\d]{1,5}@(gmail.com)$" (click)="boldBroder(test2)" required>
+                                <div *ngIf="email.errors && (email.invalid || email.touched)"> 
+                                    <small class="text-danger" *ngIf="email.errors.required && email.touched">Email is required</small>  
+                                    <small class="text-danger" *ngIf="email.errors.pattern">Email Must Be Gmail</small>  
+                                </div>
+                            </div>
+                            <div class='col-sm-12 pl-0  mt-1 mb-2'>
+                                <textarea rows="5" placeholder="Message" name="message" [class.border-danger]="message.invalid && message.touched" style="width:100%" [(ngModel)]='cont.message' #message='ngModel' #test3 (click)="boldBroder(test3)" required></textarea>
+                                <div *ngIf="message.errors && (message.invalid || message.touched)"> 
+                                    <small class="text-danger" *ngIf="message.errors.required && message.touched">Your Message is required</small>   
+                                </div>
+                            </div>
+                            
+                        
+                        <button type='submit' class="w-25 text-light btn btn-dark float-right mt-2" (click)="print(test,test1,test2,test3)"><span>Send</span></button>
+                    </form>
+                </div>
+                
+        </div>
+            <div class="col-xl-6 p-0">
+                <img src='assets/images/1.jpg' class="col-sm-6" id="dog">
+            </div>
+    </div>
+        <div class='row col-sm-12 m-0 p-0'>
+            <iframe class="pl-0 mt-2 w-100" style="border: 0px;" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d221.81330653774063!2d31.1933611!3d27.1873312!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1600440321644!5m2!1sen!2seg" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+</div>
+

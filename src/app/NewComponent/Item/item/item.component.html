@@ -1,0 +1,35 @@
+
+
+
+
+
+      <div class="container">
+          <div class="row  ">
+              <div class="col-lg-6 pr-3 item">
+                <div id="photo"><img src="{{ItemInfo.photo}}"></div>
+              </div>
+
+              <div class=" col-lg-6 pl-3  item" >
+                  <div class="m-2">
+                    <h3>{{ItemInfo.name}}</h3>
+                    <p>${{ItemInfo.price}}</p>
+                    <div class="">
+                      <input type="button" (click)="decrementValue()" value="-" />
+                      <input type="text" name="quantity" [value]="num" maxlength="4" max="12" size="1" id="number" class="text-center"/>
+                      <input type="button" (click)="incrementValue()" value="+" />
+                    </div> 
+                    <div class="info">
+                      <h5>Product Info</h5>
+                      <p>I'm a product detail. I'm a great place to add more information about your product such as sizing, material, care and cleaning instructions. 
+                          This is also a great space to write what makes this product special and how your customers can benefit from this item.</p>
+                    </div>
+                    <input type="submit" (click)="cartCount()"  class="btn btn-dark w-auto" value="Add To Cart" >
+                  </div>
+            </div>
+
+            <a class="move link" [routerLink]="['/Item', prevItemtId]" (click)="goPrev()"> <i class="fas fa-chevron-circle-left fa-2x"></i></a>
+            <a class="link" [routerLink]="['/Item', nextItemtId]" (click)="goNext()"> <i class="fas fa-chevron-circle-right fa-2x"></i></a>
+          </div>
+         
+      </div>
+

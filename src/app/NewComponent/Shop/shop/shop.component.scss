@@ -1,0 +1,56 @@
+
+.container {
+  max-width: 90%;
+    padding: 0% 2%;
+    // margin-left: 50px;
+    // margin-right: 50px;
+
+    background-color:rgb(255,255,255);
+}
+.title{
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    padding-top:80px;
+    padding-bottom:80px;
+
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.card{
+    border: none;
+    font-weight: bolder;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.col img{
+    height: 550px;
+}
+.col  a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    font-size: 40px;
+  }
+.col span{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgba(70, 70, 70, 0.1);
+    padding: 0.5rem;
+}
+@media (hover: hover) {
+    .col  span {
+      transform: translateY(100px);
+      transition: 0.2s;
+    }
+    .col :hover span {
+      transform: translateY(0);
+    }
+    .col  span {
+      transition-delay: 0.0s;
+    }
+
+}

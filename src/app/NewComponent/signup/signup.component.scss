@@ -1,0 +1,69 @@
+.container {
+    max-width: 90%;
+      padding: 0% 2%;
+
+  
+      background-color:rgb(255,255,255);
+      background-image: url('../../../assets/images/27.jpg');
+      background-repeat: no-repeat;
+      background-position: inherit;
+      background-size: cover;
+      height: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  /* You can add global styles to this file, and also import other style files */
+
+    // img.bg {
+    //     /* Set rules to fill background */
+    //     min-height: 100%;
+    //     min-width: 1024px;
+          
+    //     /* Set up proportionate scaling */
+    //     width: 100%;
+    //     height: auto;
+          
+    //     /* Set up positioning */
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //   }
+      
+    //   @media screen and (max-width: 1024px) { /* Specific to this particular image */
+    //     img.bg {
+    //       left: 50%;
+    //       margin-left: -512px;   /* 50% */
+    //     }
+    //   }
+    
+      .coco{
+          //margin: 50px;
+          //top: 600px;
+      }
+      .form-container{
+        //position: absolute;
+        // top: 9vh;
+        //left: 75vh;
+        //margin: 50px;
+        background: #fff;
+        padding:30px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px 0 rgb(36, 35, 35);
+        width: 120%;
+        
+      }
+    .ctr{
+          text-align: center;
+      }
+      .signup-button{
+              border-radius: 25px;
+      }
+      hr{
+          border: dotted 6px #EAF6F6;
+          border-bottom: none;
+          width: 12%;
+      }
+      
+        

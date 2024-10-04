@@ -1,0 +1,53 @@
+<div class="container">
+  <div class='row col-sm-12 m-0 pr-0'>
+
+    <div class='col-12 col-lg-4 mb-5 mt-5 text-left mb-4' id="trendy">
+        <h1 class='font-weight-bold mb-3'>Keep <br>it Trendy</h1>
+        <h6 class='font-weight-bold mb-3'>Sign up for our newsletter</h6>
+        <form>
+            <input type="email"  class='cont pb-2' placeholder="Enter your email here*" [class.border-danger]="email1.invalid && email1.touched" [(ngModel)]='cont.email' name='email' #email1='ngModel' #test5 pattern="^[\w]+[\d]{1,5}@(gmail.com)$" (click)="boldBroder(test5)" required>
+            <button type='submit' class="btn btn-dark text-light p-2"><span>Subscribe</span></button>
+        </form>
+    </div>
+
+<div class="col-12 col-lg-8 row">
+  <div class='col-12 col-sm-4 mb-5 mt-5'>
+    <h4 class='font-weight-bold mb-4 text-left mb-4'>Our Store</h4>
+    <ul class='pl-1 text-secondary line-'>
+        <li>San Francisco, CA 94158</li>
+        <li>500 Terry Francois Street</li>
+        <li>123-456-7890</li>
+        <li>info@LULU&PEPE.com</li>
+    </ul>
+</div>
+<div class='col-12 col-sm-4 mb-5 mt-5'>
+    <h4 class='font-weight-bold text-left mb-4'>Opening Hours</h4>
+     <ul class='pl-1 text-secondary'>
+        <li>Mon - Fri: 10am - 8pm</li>
+        <li>Sat: 10am - 4pm</li>
+        <li>Sun: 10am - 6pm</li>
+    </ul>
+</div>
+<div class='col-12 col-sm-4 mb-5 mt-5'>
+    <h4 class='font-weight-bold text-left mb-4'>Customer service</h4>
+     <ul class='pl-1 text-secondary'>
+        <li>Shipping & Returns</li>
+        <li>Store Policy</li>
+        <li>FAQ</li>
+    </ul>
+</div>
+</div>
+</div>
+    
+  <!-- Footer -->
+
+  <footer class="" id="footer">
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>© Copyright 2020 TinDog</p>
+  </footer>
+
+</div>
+

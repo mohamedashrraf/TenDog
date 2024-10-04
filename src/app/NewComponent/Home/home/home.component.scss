@@ -1,0 +1,300 @@
+
+/* Buttons */
+.home{
+  font-family: "Montserrat";
+  text-align: center;
+}
+.container{
+  max-width: 92%;
+  padding: 0% 1%;
+}
+
+
+/* Title Section */
+#title {
+  color: #fff;
+  text-align: left;
+  position: relative;
+  height: 900px;
+}
+#title img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+}
+#title .container-fluid {
+  padding: 15% 15% 7%;
+}
+#title h1{
+  font-family: 'Anton', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 75px;
+}
+#title h1 span{
+  color: #FFB200 ;
+  font-size: 80px;
+  font-weight: bold;
+}
+#title button {
+  margin: 5% 3% 5% 0;
+  padding: 5px 50px;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  border-radius: 20px;
+  border: 2px solid #FFB200;
+  background-color: #FFB200 ;
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+#title button:hover{
+  background-color: rgba(255, 255, 255,0.8) ;
+  opacity:1;
+  color: #FFB200;
+  border: 2px solid #ffffff;
+}
+
+
+
+
+/* Features Section */
+
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #FFB200;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #9BC8DF;
+}
+
+/* Testimonial Section */
+
+#testimonials {
+  background-color: #9BC8DF;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+
+#press {
+  background-color: #9BC8DF;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 20px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.card{
+  &:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #FFB200;
+    background-color: white;
+    
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #00838d;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+  }
+
+  &:hover:before {
+    transform: scale(2.15);
+  }
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+.card-header{
+  background-color: rgba(231, 160, 7, 0.2);
+}
+.card:hover .card-header{
+ background-color: #FFB200;
+}
+#pricing button:hover{
+  background-color: #FFB200; //#9BC8DF
+  border: none;
+}
+
+/* CTA Section */
+
+
+/* Footer Section */
+
+
+.social-icon {
+  margin: 20px 10px;
+}
+@media (max-width: 1293px) {
+  #title button {
+    margin: 2% 3% 20% 0;
+  }
+  #title h1 {
+    line-height: 1.3;
+  }
+
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    height: 500px;
+  }
+  #title .container-fluid {
+    padding: 15% 15% 7%;
+  }
+  #title h1{
+    letter-spacing: 3px;
+    font-size: 40px;
+  }
+  #title h1 span{
+    font-size: 40px;
+  }
+  #title button {
+    margin: 5% 3% 5% 0;
+    padding: 5px 25px;
+    font-size: 15px;
+  }
+}
+
+
+//////////
+
+
+.gallary{
+  background-color: white;
+  padding-top: 0px;
+  .row{
+    justify-content: center;
+  }
+}
+
+
+
+.gallary .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > * {
+    margin: 5px;
+  }
+}
+.gallary .col-md-6, .gallary .col-lg-4{
+  max-width: 300px;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  
+}
+.gallary .media {
+  max-width: 300px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  img {
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+.gallary .layer {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 90%;
+  background: #FFF;
+  color: #151E3F;
+  transition: all 0.9s ease;
+  p {
+    transition: all 0.9s ease;
+    transform: scale(0.1)
+  }
+}
+
+.gallary p {
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing:1px;
+}
+
+.gallary .media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+  p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+}
+
+@media (max-width: 800px){
+  body {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallary .wrapper {
+    display: block;
+    > * {
+      margin: 10px;
+    }
+  }
+}

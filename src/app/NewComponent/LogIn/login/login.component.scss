@@ -1,0 +1,47 @@
+.container {
+    max-width: 90%;
+    padding: 0% 2%;
+
+    background-color:rgb(255,255,255);
+    background-image: url('../../../../assets/images/ddog.jpg');
+    background-repeat: no-repeat;
+    background-position: inherit;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+justify-content: center;
+    align-items: center;
+}
+
+    // img.bg {
+    //     /* Set rules to fill background */
+    //     min-height: 100%;
+    //     min-width: 1024px;
+          
+    //     /* Set up proportionate scaling */
+    //     width: 100%;
+    //     height: auto;
+          
+    //     /* Set up positioning */
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //   }
+      
+
+      
+.form-container{
+//   position: absolute;
+//   top: 26vh;
+//   right: 81vh;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 black;
+  max-width:100%;
+}
+.log-button{
+  border-radius: 25px;
+}
+
+

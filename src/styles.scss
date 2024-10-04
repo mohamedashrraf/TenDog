@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+/* ----------General Style---------- */
+body {
+    font-family: "Montserrat";
+    // text-align: center;
+    //background-color: #FF776F;
+    background-color: rgb(255,178,0);
+    //background-image: url('assets/images/pets1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: inherit;
+
+    // padding-left: 15px;
+    // padding-right: 15px;
+
+    
+  }
+  
+  h1, h2, h3, h4, h6 {
+    font-family: "Montserrat-Bold";
+  }
+  
+  p {
+    color: #8f8f8f;
+  }
+  
+  /* Headings */
+  
+  .big-heading {
+    font-family: "Montserrat-Black";
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+  
+  .section-heading {
+    font-family: "Ubuntu";
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+  
+  /* Containers */
+  
+  .container-fluid{
+    padding: 7% 15%; 
+}
+  
+  /* Sections */
+  
+  .colored-section {
+    background-color: #ff4c68;
+    color: #fff;
+  }
+  
+  .white-section {
+    background-color: #fff;
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

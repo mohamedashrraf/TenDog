@@ -1,0 +1,18 @@
+
+<div class="container">
+    <p class="text-center title">Shop Our Collection</p>
+    <div class="row row-cols-1 row-cols-md-4" >
+        <div class="carditem col mb-5"  *ngFor="let item of Items">
+            <div class="card">
+                <div class="imgbody">
+                    <img src="{{item.photo}}" class="card-img-top" >
+                    <a><span [routerLink]="['/Item', item.id]" (click)="onSelect(item)" >View</span></a>
+                </div>
+            </div>
+
+            <div class="card-body p-0 mt-2">
+                <h5 class="card-title p-0 m-0">{{item.name}}</h5>
+                <p class="card-text p-0 ">${{item.price}}</p>
+            </div>
+        </div>
+    </div>

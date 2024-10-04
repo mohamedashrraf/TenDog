@@ -1,0 +1,49 @@
+<div class="container"> 
+
+
+
+<div class="coco" >
+    <form class="form-container" #userForm="ngForm">
+      <!-- {{userForm.value |json}} <hr> -->
+      <!-- {{userModel|json}} -->
+
+           <div class="form-group">
+            <label for="exampleInputEmail1">Sign Up</label><br>
+            <small>It's quick and easy.</small>
+            <hr>
+          </div>
+          <div class="form-group">
+            <label for="impinfo">required info</label>
+            <input type="text" class="form-control" [class.is-invalid]="name.invalid" id="impinfo" placeholder="full name" required #name="ngModel" [(ngModel)]="userModel.name" name="full-name">
+            {{name.className}} 
+            <small class="text-danger" [class.d-none]="name.valid ||name.untouched">Name is Required</small>
+            <br>
+            <input type="email" class="form-control" [class.is-invalid]="email.invalid" id="impinfo" placeholder="enter your email adress" required #email="ngModel" [(ngModel)]="userModel.email"  name="email | phone">
+            <small class="text-danger" [class.d-none]="email.valid ||email.untouched">email is Required</small>
+
+          </div>
+        <hr>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" pattern="^[a-zA-Z1-9]\w{3,14}$" [class.is-invalid]="pswd.invalid" id="exampleInputPassword1" placeholder="enter your password" 
+            required #pswd="ngModel" [(ngModel)]="userModel.password" name="passwd">
+
+            <input type="password" class="form-control" pattern="^[a-zA-Z1-9]\w{3,14}$" [class.is-invalid]="pswd.invalid" id="exampleInputPassword1" placeholder="re enter password" required
+            #name="ngModel" [(ngModel)]="userModel.passwordConfirm" name="repasswd">
+            <small class="text-danger" [class.d-none]="pswd.valid ||pswd.untouched">Password required <br>and must contain at least 4 characters<br> and no more than 15 characters. </small>
+
+
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required [(ngModel)]="userModel.checkBox" name="checkbox">
+            <label class="form-check-label" for="exampleCheck1"><a class="anca-taq" href="#">I agree terms and conditions</a> </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block signup-button">Sign Up</button>
+          <div class="ctr"><br>
+          <small>Already Have An Account: </small><a routerLink="/Login" routerLinkActive="active">Login</a>
+          <a href="#"></a>
+          </div>
+    </form>
+</div>
+
+</div>

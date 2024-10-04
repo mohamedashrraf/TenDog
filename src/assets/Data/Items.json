@@ -1,0 +1,13 @@
+[{"id":1 , "name":"Pepe Coller", "price":"385", "photo":"assets/images/dd1.png"},
+    {"id":2 , "name":"Louis Vest", "price":"110", "photo":"assets/images/dd2.png"},
+    {"id":3 , "name":"Coco Coat", "price":"315", "photo":"assets/images/dd3.png"},
+    {"id":4 , "name":"Ruby", "price":"220", "photo":"assets/images/dd4.png"},
+    {"id":5 , "name":"Pepe Coller", "price":"625", "photo":"assets/images/dd5.png"},
+    {"id":6 , "name":"Pepe Coller", "price":"385", "photo":"assets/images/dd14.png"},
+    {"id":7 , "name":"Louis Vest", "price":"110", "photo":"assets/images/dd7.png"},
+    {"id":8 , "name":"Coco Coat", "price":"315", "photo":"assets/images/dd8.png"},
+    {"id":9 , "name":"Ruby", "price":"220", "photo":"assets/images/dd15.png"},
+    {"id":10 , "name":"Pepe Coller", "price":"625", "photo":"assets/images/dd10.png"},
+    {"id":11 , "name":"Pepe Coller", "price":"625", "photo":"assets/images/dd11.png"},
+    {"id":12 , "name":"Pepe Coller", "price":"625", "photo":"assets/images/dd12.png"},
+    {"id":13 , "name":"Pepe Coller", "price":"625", "photo":"assets/images/dd13.png"}]
